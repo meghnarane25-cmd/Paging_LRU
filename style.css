@@ -1,0 +1,123 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f2f6fc;
+    color: #132946;
+}
+
+header {
+    background: #0e2138;
+    color: white;
+    text-align: center;
+    padding: 22px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    padding: 25px;
+}
+
+.panel {
+    background: white;
+    padding: 22px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #d5deea;
+    overflow-x: auto;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input, select {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    margin-top: 7px;
+    border: 1px solid #bdcce0;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+    background: #2868d7;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.reset {
+    background: #64748b;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    border: 1px solid #d6e0ed;
+    padding: 9px;
+    text-align: center;
+}
+
+th {
+    background: #dceaff;
+}
+
+.hit {
+    color: #16804a;
+    font-weight: bold;
+}
+
+.fault {
+    color: #c0394b;
+    font-weight: bold;
+}
+
+@media (max-width: 750px) {
+    main {
+        grid-template-columns: 1fr;
+        padding: 12px;
+    }
+}
+
+
+.hint {
+    color: #52657d;
+    font-size: 13px;
+    line-height: 1.5;
+    margin-top: 15px;
+}
+
+.note {
+    font-size: 13px;
+    min-width: 180px;
+    text-align: left;
+    overflow-wrap: anywhere;
+}
+
+#results {
+    margin-top: 18px;
+    line-height: 1.6;
+}
+
+#results h3 {
+    color: #0e2138;
+}
+
+@media (max-width: 750px) {
+    table {
+        min-width: 500px;
+    }
+}

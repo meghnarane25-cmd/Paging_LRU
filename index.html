@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paging Simulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Paging Page Replacement Simulator</h1>
+        <p>Compare FIFO, LRU and Research-Inspired LPR</p>
+    </header>
+
+    <main>
+        <section class="panel">
+            <h2>Input Parameters</h2>
+
+            <label for="pages">Page Reference String</label>
+            <input id="pages" type="text"
+                   placeholder="Example: 1 2 3 4 1 2 3">
+
+            <label for="frames">Number of Frames</label>
+            <input id="frames" type="number" min="1" value="3">
+
+            <label for="algorithm">Select Algorithm</label>
+            <select id="algorithm">
+                <option value="FIFO">FIFO</option>
+                <option value="LRU">LRU</option>
+                <option value="LPR">Research-Inspired LPR</option>
+            </select>
+
+            <button onclick="simulate()">Simulate</button>
+            <button class="reset" onclick="resetPage()">Reset</button>
+
+            <p class="hint">
+                Research demo: use pages 1 2 3 4 1 2 3 with 3 frames.
+            </p>
+        </section>
+
+        <section class="panel">
+            <h2>Simulation Process</h2>
+            <div id="tableArea">Simulation results will appear here.</div>
+            <div id="results"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
